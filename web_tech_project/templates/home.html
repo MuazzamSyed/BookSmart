@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BookSmart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--link to our own style sheet-->
+
+</head>
+
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="home.html" style="margin: 0px;">
+                        <div id="logo"></div>
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggler collapsed" onclick="" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="container toggle-bar" onclick="myFunction(this)">
+                        <div id="" class="bar bar1"></div>
+                        <div id="" class="bar bar2"></div>
+                        <div id="" class="bar bar3"></div>
+                    </span>
+                </button>
+                <div id="collapsable-nav" class="collapse float-right navbar-collapse justify-content-end">
+                    <div class="d-flex flex-row flex-sm-row-reverse justify-content-around">
+                        <div class="p-2"><a href="#" id="imp" class="btn nav-link">Login</a></div>
+                        <div class="p-2"><a href="#" class="nav-link">About</a></div>
+                        <div class="p-2"><a href="#" class="nav-link">Contact</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+
+    <!-- home-main-content -->
+    <div class="container-fluid row align-items-center homeBG" style="margin: 0px;">
+        <img src="../templates/logo.svg" class="img-fluid" id="homeBG-logo" alt="">
+    </div>
+    <div class="home-main-content"><br>
+        <div class="text-center" id="highlight-big">STOP BOOKSELLERS FROM PROFFITING OFF YOUR EDUCATION.</div>
+        <div class="text-center medium" id="medium-home">Search for any book you want, and buy directly from the seller</div>
+        <br>
+        <form action="">
+            <input class="form-control" id='search-box' type="text" placeholder="Search..">
+        </form>
+    </div>
+    <!-- home-main-content end -->
+    <div class="rocket container-fluid">
+        <img src="../templates/images/rocket.svg" alt="" id='rocket' class="image-fluid">
+    </div> 
+    <div class="jumbotron"><hr>
+        <div class="medium text-center">Help us grow! Share this website.
+        </div>
+        <a href="" class="feedback" id="">Feedback is appreciated!</a>
+        <div class="text-center">Thank you for visiting.</div>
+    </div>
+    
+    <hr id="hr-sm">
+
+    <!-- >>>>>>>>>>>>>>> footer -->
+    <footer class="site-footer">
+        <div class="container">
+                <div class="row justify-content-around">
+                    <div class=""><a href="">About Us</a></div>
+                    <div class=""><a href="">FAQs</a></div>
+                    <div class=""><a href="">Contact Us</a></div>
+                    <div class=""><a href="">Attributes</a></div>
+                </div>    
+        </div>
+        <a href="" class="copyright-text"> Meet the developers!</a>
+        <hr id="hr-sm">
+        <div class="container">
+            <p class="copyright-text text-center">Copyright &copy; 2020 </p>
+            
+            
+        </div>
+    </footer>
+
+    <!-- jQuery (bootstrap js plugins depend on it)-->
+    <script src="js/jquery-3.4.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--our own js file-->
+
+    
+</body>
+
+</html>
