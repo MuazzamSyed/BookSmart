@@ -32,7 +32,11 @@
                 </button>
                 <div id="collapsable-nav" class="collapse float-right navbar-collapse justify-content-end">
                     <div class="d-flex flex-row flex-sm-row-reverse justify-content-around">
-                        <div class="p-2"><a href="#" id="imp" class="btn nav-link">Login</a></div>
+                        <div class="p-2"> <button type="button" class="btn nav-link" id="imp" data-toggle="modal" data-target="#login">
+                            Login/SignUp
+                          </button>
+                            <!-- <a href="#" id="imp" data-target="#login" class="btn nav-link">Login</a> -->
+                        </div>
                         <div class="p-2"><a href="#" class="nav-link">About</a></div>
                         <div class="p-2"><a href="#" class="nav-link">Contact</a></div>
                     </div>
@@ -48,18 +52,18 @@
         <img src="../templates/logo.svg" class="img-fluid" id="homeBG-logo" alt="">
     </div>
     <div class="home-main-content"><br>
-        <div class="text-center" id="highlight-big">STOP BOOKSELLERS FROM PROFFITING OFF YOUR EDUCATION.</div>
+        <div class="text-center highlight-big">STOP BOOKSELLERS FROM PROFFITING OFF YOUR EDUCATION.</div>
         <div class="text-center medium" id="medium-home">Search for any book you want, and buy directly from the seller</div>
         <br>
         <form action="">
-            <input class="form-control" id='search-box' type="text" placeholder="Search..">
+            <input class=" homeSearch" id='search-box' type="text" placeholder="Search..">
         </form>
     </div>
     <!-- home-main-content end -->
     <div class="rocket container-fluid">
         <img src="../templates/images/rocket.svg" alt="" id='rocket' class="image-fluid">
     </div> 
-    <div class="jumbotron"><hr>
+    <div class="" style="width: 95%; margin: auto;"><hr>
         <div class="medium text-center">Help us grow! Share this website.
         </div>
         <a href="" class="feedback" id="">Feedback is appreciated!</a>
@@ -86,6 +90,52 @@
             
         </div>
     </footer>
+
+
+
+        <!-- Login Modal  -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="text-center" style="font-size: 1.5rem; font-weight: lighter;" id="">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- <div class="container"> -->
+                    <div class="wrap">
+                      <div id="sign-in-form">
+                        <form>
+                          <label for="username">Username</label>
+                          <input id="username" type="text" name="username" />
+                          <label for="password">Password</label>
+                          <input id="password" type="password" name="password" />
+                          <input id="remember" type="checkbox" />
+                          <label for="remember" id="rlabel">Keep me Signed in</label>
+                          <input type="submit" class="button" name="submit" value="LogIn" />
+                        </form>
+                
+                        <footer>
+                            <div class="fp"><a href="">Forgot Password?</a></div>
+                            <div class="row justify-content-md-center">
+                                <div class="col-2" style="padding: 0;">New User?</div>
+                                <div class="col-2" style="padding: 0;"> 
+                                    <a href="Signup.html" style="margin: 0;">SignUp</a> 
+                                </div>
+
+                                
+                            </div>
+                        </footer>
+                      </div>
+                    </div>
+                  <!-- </div> -->
+            </div>
+            
+        </div>
+        </div>
+    </div>
 
     <!-- jQuery (bootstrap js plugins depend on it)-->
     <script src="js/jquery-3.4.2.js"></script>

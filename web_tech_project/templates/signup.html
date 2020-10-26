@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--link to our own style sheet-->
+
+</head>
+
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="home.html" style="margin: 0px;">
+                        <div id="logo"></div>
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggler collapsed" onclick="" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="container toggle-bar" onclick="myFunction(this)">
+                        <div id="" class="bar bar1"></div>
+                        <div id="" class="bar bar2"></div>
+                        <div id="" class="bar bar3"></div>
+                    </span>
+                </button>
+                <div id="collapsable-nav" class="collapse float-right navbar-collapse justify-content-end">
+                    <div class="d-flex flex-row flex-sm-row-reverse justify-content-around">
+                        <div class="p-2"> <button type="button" class="btn nav-link" id="imp" data-toggle="modal" data-target="#login">
+                            Login/SignUp
+                          </button>
+                            <!-- <a href="#" id="imp" data-target="#login" class="btn nav-link">Login</a> -->
+                        </div>
+                        <div class="p-2"><a href="contactus.html" class="nav-link">About</a></div>
+                        <div class="p-2"><a href="contactus.html" class="nav-link">Contact</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </header>
+<br><br>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="highlight-big">Hi there!</div>
+        <div class="medium">SignUp by filling details down below!</div> <hr>
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputUsername">Username</label>
+                <input type="text" class="form-control" placeholder="@User_Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose</option>
+
+                  <option selected>Andhra Pradesh</option>
+                  <option selected>Maharashtra</option>
+                  <option selected>Punjab</option>
+                  <option selected>Rajasthan</option>
+                  <option selected>Bhopal</option>
+                  <option selected>Uttar Pradesh</option>
+                
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Confirm Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Confirm Password">
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>   
+        </div>
+    </div>
+    <br><br><br>
+
+    <!-- >>>>>>>>>>>>>>> footer -->
+    <hr>
+    <footer class="site-footer" style="">
+        <div class="container">
+                <div class="row justify-content-around">
+                    <div class=""><a href="">About Us</a></div>
+                    <div class=""><a href="">FAQs</a></div>
+                    <div class=""><a href="">Contact Us</a></div>
+                    <div class=""><a href="">Attributes</a></div>
+                </div>    
+        </div>
+        <a href="" class="copyright-text"> Meet the developers!</a>
+        <hr id="hr-sm">
+        <div class="container">
+            <p class="copyright-text text-center">Copyright &copy; 2020 </p>
+            
+            
+        </div>
+    </footer>
+
+</body>
+</html>

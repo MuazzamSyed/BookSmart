@@ -5,12 +5,13 @@ html{
     font-family: 'Roboto', sans-serif, 'Oswald';
 
     box-sizing: border-box;}
-body{
+body, .modal-content{
     background-color: #141414;
     color: #eaeaea;
 }
 .navbar{
-    background-color: #070707;}
+    background-color: #070707;
+    position: static;}
 
 hr{
     height: 2px;
@@ -50,6 +51,7 @@ a:focus, a:hover{
     transform: scale(2, 2) translate(5px,10px);
     
 }
+
 .container{
     display: inline-block;
     margin: 0px;
@@ -66,7 +68,11 @@ a:focus, a:hover{
     border-color: #eaeaea;
     border-radius: 20px;
     margin-right: 0px;}
-.p-2 a:hover, .p-2 a:focus{
+
+.close{
+    color: #eaeaea;
+}
+.p-2 a:hover, .p-2 a:focus, .p-2 button:hover, .close:hover{
     font-weight: bold;
     color: #eaeaea;
 }
@@ -132,7 +138,7 @@ nav{
     /* left: -50%; */
     /* transform: translate(50%, 50%); */
 /* } */
-#highlight-big{
+.highlight-big{
     font-size: 2rem;
     text-shadow: 0px 0px 12px #070707;
     color: #ff9000;
@@ -142,7 +148,7 @@ nav{
 .medium{
     font-weight: 500;
 }
-.form-control {
+.homeSearch {
     border: none;
     background: none;
     font-weight: bold;
@@ -152,18 +158,18 @@ nav{
     align-self: center;
     transition: 0.8s, shadow 0.2s, border-color 0s ease-in-out;
 }
-.form-control:hover{
+.homeSearch:hover{
     border-color: #eaeaea;
     /* box-shadow: 0px 0px 17px #070707d0; */
 }
-.form-control:focus{
+.homeSearch:focus{
     border-color: #eaeaea;
     /* box-shadow: 0px 0px 17px #070707d0; */
     box-shadow: none;
     background: none;
     width: 50%;margin-left: 25%;
 }
-.form-control::placeholder{
+.homeSearch::placeholder{
     color: #eaeaeace;
     font-weight: bold;
     font-size: larger;
@@ -174,7 +180,7 @@ nav{
     background-repeat: no-repeat;
     padding: 12px 20px 12px 50px;
     color: #eaeaea;
-    font-weight: bold;
+    font-weight: lighter;
     font: 200;
     /* font-style: capitalize; */
 }
@@ -197,18 +203,174 @@ nav{
     height: auto;
     /* position: top; */
 }
-/* div.scrolled{
-    opacity: 100%;
-} */
 
 
 
 
+/*      modal      */
 
 
+.modal-header{
+    border-bottom: 1px solid #888888;
+}
+.modal-content{
+    border: 1px solid #888888;
+    border-radius: 10px;
+}
+label {
+    color: #eaeaea;
+    text-transform: uppercase;
+    /* padding: 13px 20px; */
+    position: relative;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: transparent;
+    /* padding: 10px 20px; */
+    border: none;
+    border-bottom: 2px solid #1d2124;
+    outline: none;
+    box-sizing: border-box;
+  
+    /* margin-bottom: 10px; */
+  }
+  
+  input:active,
+  input:focus {
+    border-bottom: 0.12em solid #ff9000;
+    border-color: #ff9000;
+    box-shadow: 0 5px 5px -5px #ff9000;
+  }
+  
+  #password {
+    padding-right: 50px;
+  }
+  
+  #password + i {
+    color: #eaeaea;
+    font-size: 25px;
+    float: right;
+    position: relative;
+    top: -43px;
+    right: 15px;
+    cursor: pointer;
+  }
+  
+  #password + i:hover {
+    color:#eaeaea;
+  }
+  
+  input[type="checkbox"] {
+    width: inherit;
+    padding: 0;
+    margin: 20px 5px 30px 20px;
+  }
+  
+  input[type="checkbox"] + span {
+    color: #eaeaea;
+  }
+  
+  #rlabel {
+    display: inline-block;
+    padding: 0;
+    top: 1px;
+  }
+  
+  #remember:hover,
+  #rlabel:hover {
+    cursor: pointer;
+  }
+  
+  .button {
+    width: 70%;
+    background: #ff9000;
+    color: #141414;
+    text-transform: uppercase;
+    margin-left: 15%;
+    padding: 12px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 30px;
+  }
+  
+  .button:hover {
+    background: #ff9000;
+    box-shadow: 0 0 10px #ff910056;
+  }
 
+  #sign-up-form input[type="submit"] {
+    margin-top: 50px;
+  }
+  
+  footer .fp a {
+    color: #eaeaea;
+    cursor: pointer;
+  }
+  
+  footer .hr {
+    border-bottom: 2px solid #141414;
+    margin: 60px 0px 40px;
+  }
+  
+  footer .fp {
+    text-align: center;
+  }
+  
+  footer .fp a:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  #sign-in-form {
+    display: block;
+  }
+  
+  #sign-up-form {
+    display: none;
+  }
 
+input{
+    color: #eaeaea;
+}
+.form-control{
+    background-color: #252525;
+    color: #eaeaea;
+    border: 1px solid #888888;
+    transition: .2s ease;
+}
+.form-control:focus{
+    color: #eaeaea;
+    background-color: #252525;
+    border: 1px solid #ff9000;
+    box-shadow: none;
+}
+input{
+    color: #eaeaea;
+}
+textarea{
+    color: #eaeaea;
+}
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #eaeaea;
+    opacity: 1; /* Firefox */
+  }
+
+.site-footer{
+    
+    /* position: fixed; */
+    /* width: 50%; */
+    bottom: 10px;
+    /* border: 3px solid #8AC007; */
+}
 /* ------------------- media queries ---------------- */
 @media (max-width: 576px){
     #logo:hover, #logo:focus{
@@ -229,13 +391,13 @@ nav{
     div a, .jumbotron div{
         font-size: small;
     }
-    .form-control{
+    .homeSearch{
         width: 50%;margin-left: 25%;
     }
-    .form-control:focus{
+    .homeSearch:focus{
         width: 70%;margin-left: 15%;
     }
-    #highlight-big{
+    .highlight-big{
         font-size: 1.5rem
     }
     #medium-home{
