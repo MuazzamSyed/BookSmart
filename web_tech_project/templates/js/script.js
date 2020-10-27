@@ -46,3 +46,11 @@ $(function(){
 });
 
 console.log("js file working");
+
+
+
+    function redirect()
+    {
+    var url = "product.html";
+    window.location(url);
+    }
