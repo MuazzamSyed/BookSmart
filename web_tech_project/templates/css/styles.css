@@ -70,6 +70,10 @@ a:focus, a:hover{
     border-radius: 20px;
     margin-right: 0px;}
 
+.btn:hover{
+    color: #eaeaea;
+}
+
 .close{
     color: #eaeaea;
 }
